@@ -1,0 +1,22 @@
+@import "../../components/rockets/RocketCard/rocketCard.module.scss";
+
+.rockets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 48px;
+
+  &__title {
+    font-family: --font-bakbak-one;
+    font-size: 48px;
+    margin-bottom: 48px;
+    font-family: var(--font-bakbak-one);
+  }
+
+  &__items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+  }
+}
