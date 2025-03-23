@@ -1,4 +1,4 @@
-import styles from './rockets.module.scss';
+import styles from './styles.module.scss';
 
 import { RocketsList } from '@/components/rockets/RocketsList';
 
