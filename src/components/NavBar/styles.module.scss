@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121214;
+    color: #FFF;
+    padding: 12px 48px;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    &__title {
+        font-family: var(--font-bakbak-one);
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &__naviagation-items {
+        display: flex;
+        gap: 24px;
+        cursor: pointer;
+
+        a {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
