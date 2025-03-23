@@ -4,7 +4,7 @@ import rocketMock from './rocket.mock.json';
 import Image from 'next/image';
 
 import { AboutCards } from '@/components/rocket-detials/AboutCards';
-import { TechnicalSheetList } from '@/components/rocket-detials/TechnicalSheetList';
+import { ImageGallery } from '@/components/rocket-detials/ImageGallery';
 
 const RocketDetailPage = async ({ params }) => {
     const { rocket_id } = await params;
@@ -26,8 +26,8 @@ const RocketDetailPage = async ({ params }) => {
                 <h2 className={styles["rocket-details__subtitle"]}>About</h2>
                 <AboutCards rocketDetail={rocketMock} />
 
-                <h2 className={styles["rocket-details__subtitle"]}>Technical Sheet</h2>
-                <TechnicalSheetList />
+                <h2 className={styles["rocket-details__subtitle"]}>Images</h2>
+                <ImageGallery images={rocketMock?.flickr_images} rocketName={rocketMock?.name} />
             </section>
         </main>
     )
