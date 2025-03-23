@@ -1,0 +1,10 @@
+.about-cards {
+    margin-bottom: 48px;
+
+    section &__card-title {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 18px;
+    }
+}
