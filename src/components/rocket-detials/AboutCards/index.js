@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 
 import { CARDS, CARD_TITLE } from '@/constants/cards.constants';
 import { CARD_ICONS } from '@/utils/icons';
+import { formatByKey } from '@/utils/formatByKey';
 
 const AboutCards = ({ rocketDetail }) => (
     <section className={styles['about-cards']}>
@@ -26,7 +27,7 @@ const AboutCards = ({ rocketDetail }) => (
                         {CARD_TITLE[key]}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        {rocketDetail[key]}
+                        {formatByKey(rocketDetail[key], key)}
                     </Typography>
                     </CardContent>
                 </Card>

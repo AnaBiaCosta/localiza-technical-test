@@ -1,5 +1,13 @@
 .rockets-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
+    &__list-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 24px;
+    }
 }

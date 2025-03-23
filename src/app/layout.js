@@ -1,5 +1,6 @@
 import { bakbakOne, nunito } from '@/utils/theme';
 import MuiThemeProvider from '@/components/MuiThemeProvider';
+import ReactQueryProvider from "@/components/ReactQueryProvider";
 import "./globals.scss";
 
 import { NavBar } from '@/components/NavBar';
@@ -7,7 +8,7 @@ import { Footer } from '@/components/Footer';
 
 export const metadata = {
   title: "Space X",
-  description: "Learn about Space X rockets and astronauts",
+  description: "Learn about Space X rockets",
 };
 
 export default function RootLayout({ children }) {
@@ -16,7 +17,9 @@ export default function RootLayout({ children }) {
       <body className={`${nunito.className} ${bakbakOne.variable} ${nunito.variable}`}>
         <NavBar />
         <MuiThemeProvider>
-          {children}
+          <ReactQueryProvider>
+            {children}
+          </ReactQueryProvider>
         </MuiThemeProvider>
         <Footer />
       </body>

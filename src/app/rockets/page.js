@@ -1,18 +1,34 @@
 import styles from './styles.module.scss';
 
+import { dehydrate, QueryClient, HydrationBoundary } from "@tanstack/react-query";
+
+import CachedDB from "@/utils/db";
+
 import { RocketsList } from '@/components/rockets/RocketsList';
 
-import rocketsMock from './rockets.mock.json';
+const RocketsPage = async () => {
+  const page = 1;
+  const limit = 10;
 
-const RocketsPage = () => {
+  await CachedDB.initializeDB();
+  const queryClient = new QueryClient();
+
+  const rocketsData = CachedDB.getPaginatedRockets(page, limit);
+
+  queryClient.setQueryData(["rockets", page, limit], rocketsData);
+
+  const initialData = dehydrate(queryClient);
+
   return (
-    <main className={styles.rockets}>
-        <div>
-          <h1 className={styles.rockets__title}>Rockets</h1>
+    <HydrationBoundary state={initialData}>
+          <main className={styles.rockets}>
+            <div >
+              <h1 className={styles.rockets__title}>Rockets</h1>
 
-          <RocketsList serverSideRocketsList={rocketsMock} />
-        </div>
-    </main>
+              <RocketsList />
+            </div>
+        </main>
+    </HydrationBoundary>
   )
 }
 

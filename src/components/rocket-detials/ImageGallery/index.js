@@ -4,17 +4,18 @@ import ImageListItem from '@mui/material/ImageListItem';
 
 const ImageGallery = ({ images, rocketName }) => (
     <ImageList
-        cols={3} rowHeight={200}
+        cols={2} rowHeight={500}
     >
         {images.map((image) => (
             <ImageListItem
                 key={image}
             >
                 <Image
+                    fill
                     src={image}
                     alt={`Image of ${rocketName}`}
-                    width={400}
-                    height={200}
+                    // width={600}
+                    // height={300}
                 />
             </ImageListItem>
         ))}
