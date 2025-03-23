@@ -3,6 +3,7 @@ import MuiThemeProvider from '@/components/MuiThemeProvider';
 import "./globals.scss";
 
 import { NavBar } from '@/components/NavBar';
+import { Footer } from '@/components/Footer';
 
 export const metadata = {
   title: "Space X",
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <MuiThemeProvider>
           {children}
         </MuiThemeProvider>
+        <Footer />
       </body>
     </html>
   );
