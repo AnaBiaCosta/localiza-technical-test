@@ -13,9 +13,7 @@ const ImageGallery = ({ images, rocketName }) => (
                 <Image
                     fill
                     src={image}
-                    alt={`Image of ${rocketName}`}
-                    // width={600}
-                    // height={300}
+                    alt={`${rocketName} rocket`}
                 />
             </ImageListItem>
         ))}

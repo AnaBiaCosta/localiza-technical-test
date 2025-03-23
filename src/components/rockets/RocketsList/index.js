@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { usePaginatedRockets } from "@/hooks/usePaginatedRockets";
 
+import CircularProgress from '@mui/material/CircularProgress';
 import Pagination from '@mui/material/Pagination';
 import styles from './styles.module.scss';
 import { RocketCard } from '../RocketCard';
@@ -25,7 +26,7 @@ const RocketsList = () => {
 
     return (
         <section className={styles['rockets-list']}>
-            {isFetching && <p>Carregando...</p>}
+            {isFetching && <CircularProgress />}
 
             <div className={styles['rockets-list__list-wrapper']}>
                 { rocketsData?.data?.map((rocket) => (

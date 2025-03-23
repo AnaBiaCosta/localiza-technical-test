@@ -1,14 +1,13 @@
 import styles from './styles.module.scss';
-
 import Image from 'next/image';
 
+import CircularProgress from '@mui/material/CircularProgress';
 import { AboutCards } from '@/components/rocket-detials/AboutCards';
 import { ImageGallery } from '@/components/rocket-detials/ImageGallery';
 
 import RocketApiService from '@/services/RocketApiService';
 
 export const revalidate = 60;
-
 export const dynamicParams = true;
 
 export async function generateStaticParams() {
@@ -27,17 +26,17 @@ const RocketDetailPage = async ({ params }) => {
     const rocketData = await RocketApiService.fetchRocketDetails(rocket_id);
 
     if (!rocketData) {
-      return <div>Loading...</div>;
+      return <CircularProgress />;
     }
 
     return (
         <main className={styles["rocket-details"]}>
             <Image
+              className={styles["rocket-details__image-wrapper"]}
                 src={rocketData?.flickr_images[0]}
-                style={{width: '100%', height: '700px', objectFit: 'cover', objectPosition: 'top'}}
                 width={500}
                 height={500}
-                alt="Picture of the author"
+                alt={`${rocketData?.name} rocket`}
             />
 
             <section style={{ maxWidth: '1378px' }}>

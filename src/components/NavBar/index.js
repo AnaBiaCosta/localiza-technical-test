@@ -1,6 +1,7 @@
+import styles from './styles.module.scss';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from './styles.module.scss';
 
 const NavBar = () => (
     <nav className={styles.navbar}>
