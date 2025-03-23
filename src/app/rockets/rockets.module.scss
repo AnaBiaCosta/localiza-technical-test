@@ -1,5 +1,3 @@
-@import "../../components/rockets/RocketCard/rocketCard.module.scss";
-
 .rockets {
   display: flex;
   flex-direction: column;
@@ -12,11 +10,5 @@
     font-size: 48px;
     margin-bottom: 48px;
     font-family: var(--font-bakbak-one);
-  }
-
-  &__items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
   }
 }

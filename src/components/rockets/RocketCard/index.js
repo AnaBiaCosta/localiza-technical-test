@@ -1,4 +1,6 @@
-import styles from './rocketCard.module.scss';
+"use client";
+
+import styles from './styles.module.scss';
 
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -9,7 +11,7 @@ import CardActions from '@mui/material/CardActions';
 import Chip from '@mui/material/Chip';
 
 const RocketCard = ({ rocket, onClick }) => (
-  <Card sx={{ maxWidth: 432 }}>
+  <Card sx={{ maxWidth: 432 }} className={styles['rocket-card__wrapper']}>
     <CardMedia
       component="img"
       height="250"
@@ -33,11 +35,11 @@ const RocketCard = ({ rocket, onClick }) => (
     <Typography variant="body1">{rocket?.description}</Typography>
   </CardContent>
 
-  <CardActions>
+  <CardActions className={styles['rocket-card__wrapper-actions']}>
     <Button
       color="primary"
       size="small"
-      // onClick={() => onClick(rocket.id)}
+      onClick={() => onClick(rocket.id)}
     >
       Learn more
     </Button>
