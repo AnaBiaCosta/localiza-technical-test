@@ -1,3 +1,5 @@
+@import '../../../styles/variables';
+
 .rocket-details {
     display: flex;
     flex-direction: column;
@@ -5,19 +7,19 @@
     align-items: center;
   
     &__title {
-      font-size: 48px;
-      margin-top: 48px;
+      font-size: $font-size-48;
+      margin-top: $spacing-48;
       font-family: var(--font-bakbak-one);
     }
 
     &__description {
-      margin-bottom: 48px;
+      margin-bottom: $spacing-48;
     }
 
     &__subtitle {
       font-weight: bold;
-      font-size: 24px;
-      margin-bottom: 24px;
+      font-size: $font-size-24;
+      margin-bottom: $spacing-24;
     }
 
     &__content-wrapper {

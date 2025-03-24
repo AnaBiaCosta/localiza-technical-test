@@ -1,5 +1,6 @@
-.home {
+@import '../styles/variables';
 
+.home {
     &__wrapper {
         background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_10_astronautrd_DSC_0511_desktop_7e4a2cd6ca.jpg');
         display: block;
@@ -8,7 +9,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: #000;
+        background-color: $black;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -19,19 +20,19 @@
         position: absolute;
         bottom: 20%;
         left: 10%;
-        color: white;
+        color: $white;
 
         h1 {
-            font-size: 48px;
+            font-size: $font-size-48;
             font-family: var(--font-bakbak-one);
-            margin-bottom: 24px;
+            margin-bottom: $spacing-24;
         }
  
         a {
             background: transparent;
-            border: 1px solid #FFF;
-            padding: 12px;
-            color: #FFF;
+            border: 1px solid $white;
+            padding: $spacing-12;
+            color: $white;
             cursor: pointer;
         } 
     }

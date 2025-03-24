@@ -1,13 +1,15 @@
+@import '../../styles/variables';
+
 .rockets {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 48px;
+  margin: $spacing-48;
 
   &__title {
-    font-size: 48px;
-    margin-bottom: 48px;
+    font-size: $font-size-48;
+    margin-bottom: $spacing-48;
     font-family: var(--font-bakbak-one);
   }
 }

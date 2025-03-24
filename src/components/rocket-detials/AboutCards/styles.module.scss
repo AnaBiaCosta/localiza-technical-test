@@ -1,10 +1,12 @@
+@import '../../../styles/variables';
+
 .about-cards {
-    margin-bottom: 48px;
+    margin-bottom: $spacing-48;
 
     section &__card-title {
         display: flex;
         align-items: center;
-        gap: 4px;
-        font-size: 18px;
+        gap: $gap-4;
+        font-size: $font-size-18;
     }
 }

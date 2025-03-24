@@ -12,7 +12,7 @@ class RocketsDatabase {
   async initializeDB() {
     if (this.rocketsDB.length > 0) return;
 
-    console.log("🔄 Buscando dados da SpaceX...");
+    console.log("🔄 Fetching SpaceX data...");
     const rockets = await RocketApiService.fetchRockets();
 
     while (this.rocketsDB.length < 50) {
@@ -25,9 +25,9 @@ class RocketsDatabase {
     }
 
     console.log(
-      "✅ Banco de dados carregado com",
+      "✅ Database loaded with",
       this.rocketsDB.length,
-      "itens"
+      "items"
     );
   }
 

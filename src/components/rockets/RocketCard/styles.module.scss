@@ -1,9 +1,11 @@
+@import '../../../styles/variables';
+
 .rocket-card {
     &__title {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 12px;
+        margin-bottom: $spacing-12;
     }
 
     &__wrapper {
