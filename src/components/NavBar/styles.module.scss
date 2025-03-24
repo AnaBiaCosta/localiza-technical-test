@@ -8,6 +8,12 @@
     color: $white;
     padding: $spacing-12 $spacing-24;
 
+    &--transparent {
+        background-color: transparent;
+        position: fixed;
+        width: 100%;
+    }
+
     @media screen and (min-width: $breakpoint-desktop) {
         padding: $spacing-12 $spacing-48;
     }

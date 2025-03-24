@@ -1,5 +1,7 @@
 'use client';
 
+import styles from './styles.module.scss';
+
 import Image from 'next/image';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
@@ -11,7 +13,7 @@ const ImageGallery = ({ images, rocketName }) => {
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
-        <ImageList cols={isMobile ? 1 : 2 } rowHeight={500}>
+        <ImageList cols={isMobile ? 1 : 2 } rowHeight={500} className={styles['image-gallery']}>
             {images.map((image) => (
                 <ImageListItem
                     key={image}

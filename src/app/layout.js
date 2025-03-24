@@ -1,7 +1,7 @@
 import { bakbakOne, nunito } from '@/utils/theme';
 import MuiThemeProvider from '@/components/MuiThemeProvider';
 import ReactQueryProvider from "@/components/ReactQueryProvider";
-import "./globals.scss";
+import "@/app/globals.scss";
 
 import { NavBar } from '@/components/NavBar';
 import { Footer } from '@/components/Footer';
