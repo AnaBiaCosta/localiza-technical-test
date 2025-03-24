@@ -43,3 +43,6 @@ Access the hosted application on Vercel:
 ## 📌 Source Code Repository
 
 🔗 [Technical test - GitHub](https://github.com/AnaBiaCosta/localiza-technical-test)
+
+## 🎨 Figma
+[Figma layout](https://www.figma.com/design/Oi50K2f0Sc3WmQsxiXSY0U/DESAFIO-T%C3%89CNICO-LOCALIZA?node-id=0-1&p=f&t=Hl2svSprvBaMqy0C-0)
