@@ -15,7 +15,7 @@ class RocketsDatabase {
     console.log("🔄 Fetching SpaceX data...");
     const rockets = await RocketApiService.fetchRockets();
 
-    while (this.rocketsDB.length < 50) {
+    while (this.rocketsDB.length < 55) {
       this.rocketsDB.push(
         ...rockets.map((rocket) => ({
           localId: `${rocket.id}-${this.rocketsDB.length}`,
