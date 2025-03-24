@@ -5,7 +5,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: $spacing-48;
+  margin: $spacing-24;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin: $spacing-48;
+  }
 
   &__title {
     font-size: $font-size-48;
