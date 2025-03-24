@@ -1,0 +1,29 @@
+@use '@/styles/variables' as *;
+
+.loading {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-24;
+    justify-content: center;
+    align-items: center;
+    padding: $spacing-48;
+    animation: pulse 1.5s infinite;
+
+    p {
+        font-weight: bold;
+        font-size: $font-size-24;
+    }
+
+    @keyframes pulse {
+        0% {
+          opacity: 0.3;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.3;
+        }
+      }
+}
