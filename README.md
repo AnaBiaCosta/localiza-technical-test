@@ -38,8 +38,8 @@ http://localhost:3000
 ## 🌎 Live Application Link
 
 Access the hosted application on Vercel:
-👉 [SpaceX Explorer - Deploy](#https://localiza-technical-test.vercel.app/)
+👉 [Technical test - Deploy](https://localiza-technical-test.vercel.app/)
 
 ## 📌 Source Code Repository
 
-🔗 [GitHub - SpaceX Explorer](#https://github.com/AnaBiaCosta/localiza-technical-test)
+🔗 [Technical test - GitHub](https://github.com/AnaBiaCosta/localiza-technical-test)
