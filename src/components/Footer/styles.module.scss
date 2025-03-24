@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@use '@/styles/variables' as *;
 
 .footer {
     display: flex;
@@ -7,7 +7,11 @@
     margin-top: $spacing-48;
     background-color: $black;
     color: $white;
-    padding: $spacing-48;
+    padding: $spacing-24;
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        padding: $spacing-48;
+    }
 
     &__links-content {
         display: flex;

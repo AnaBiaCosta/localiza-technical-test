@@ -1,10 +1,18 @@
-@import '../../../styles/variables';
+@use '@/styles/variables' as *;
 
 .rocket-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &__content-wrapper {
+      padding: 0 $spacing-24;
+
+      @media screen and (min-width: $breakpoint-desktop) {
+        padding: 0;
+      }
+    }
   
     &__title {
       font-size: $font-size-48;

@@ -39,7 +39,7 @@ const RocketDetailPage = async ({ params }) => {
                 alt={`${rocketData?.name} rocket`}
             />
 
-            <section style={{ maxWidth: '1378px' }}>
+            <section className={styles["rocket-details__content-wrapper"]} style={{ maxWidth: '1378px' }}>
                 <h1 className={styles["rocket-details__title"]}>{rocketData?.name}</h1>
                 <p className={styles["rocket-details__description"]}>{rocketData?.description}</p>
 

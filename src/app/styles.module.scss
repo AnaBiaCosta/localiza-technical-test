@@ -1,18 +1,22 @@
-@import '../styles/variables';
+@use '@/styles/variables' as *;
 
 .home {
     &__wrapper {
-        background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_10_astronautrd_DSC_0511_desktop_7e4a2cd6ca.jpg');
+        background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_10_astronautrd_DSC_0512_mobile_b94115b17e.jpg');
         display: block;
         position: absolute;
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: $black;
+        background-color:  $black;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @media screen and (min-width: $breakpoint-desktop) {
+            background-image: url('https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_10_astronautrd_DSC_0511_desktop_7e4a2cd6ca.jpg');
+        }
     }
 
     &__content {
@@ -26,6 +30,7 @@
             font-size: $font-size-48;
             font-family: var(--font-bakbak-one);
             margin-bottom: $spacing-24;
+            text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3);
         }
  
         a {

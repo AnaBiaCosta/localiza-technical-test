@@ -1,7 +1,11 @@
-@import '../../../styles/variables';
+@use '@/styles/variables' as *;
 
 .about-cards {
     margin-bottom: $spacing-48;
+
+    &__wrapper {
+        border: 2px solid red;
+    }
 
     section &__card-title {
         display: flex;
